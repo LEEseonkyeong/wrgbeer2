@@ -467,21 +467,97 @@
 
             <div class="franchise_box">
                 <div class="franchise_cont">
-                    <div class="franchise_cont_title">
+                    <div class="f_cont_title">
                         <p class="text20_b">상담자 정보</p>
                         <span class="text14">* 별표 표시는 필수 입력 항목입니다.</span>
                         <div></div>
-                    </div><!-- franchise_cont_title -->
+                    </div><!-- f_cont_title -->
 
-                    <form class="franchise_form">
-                        <ul class="franchise_form_cont f_form_left">
-                            <li class="f_form f_form_name">
-                                <p class="input_title"><span>* </span>성함</p>
-                                <div><input type="text" placeholder="성함"></div>
-                            </li><!-- f_form_name -->
+                    <form class="f_form">
+                        <div>
+                            <ul class="f_form_cont f_form_left">
+                                <li class="f_form_name">
+                                    <label class="input_title text18_b"><span class="star">* </span>성함</label>
+                                    <div><input type="text" placeholder="성함"></div>
+                                </li><!-- f_form_name -->
 
-                        </ul><!-- f_form_left -->
-                    </form><!-- franchise_form -->
+                                <li class="f_form_number">
+                                    <label class="input_title text18_b"><span class="star">* </span>연락처</label>
+
+                                    <div>
+                                        <select id="phone_start" class="phone_start" name="phone_start">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select><!-- phone_start -->
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <input class="f_form_number" type="text" placeholder="" type="text"
+                                            onkeydown="return onlyNumber();"/
+                                            onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                    </div>
+                                    <div></div>
+                                    <div>
+                                        <input class="f_form_number" type="text" placeholder="" type="text"
+                                            onkeydown="return onlyNumber();"/
+                                            onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" />
+                                    </div>
+                                </li><!-- f_form_number -->
+
+                                <li class="f_form_mail">
+                                    <label class="input_title text18_b"><span>&nbsp;&nbsp;&nbsp;</span>이메일</label>
+                                    <div><input type="text" placeholder="example@email.com"></div>
+                                </li><!-- f_form_mail -->
+
+                                <li class="f_form_region">
+                                    <label class="input_title text18_b"><span class="star">* </span>창업희망지역</label>
+
+                                    <div>
+                                        <select id="region" class="region" name="region">
+                                            <option value="">시/도 선택</option>
+                                            <option value="011">서울</option>
+                                            <option value="016">부산</option>
+                                            <option value="017">대구</option>
+                                            <option value="018">인천</option>
+                                            <option value="019">광주</option>
+                                            <option value="019">대전</option>
+                                            <option value="019">울산</option>
+                                            <option value="019">세종</option>
+                                            <option value="019">경기</option>
+                                            <option value="019">강원</option>
+                                            <option value="019">충북</option>
+                                            <option value="019">충남</option>
+                                            <option value="019">전북</option>
+                                            <option value="019">전남</option>
+                                            <option value="019">경북</option>
+                                            <option value="019">경남</option>
+                                            <option value="019">제주</option>
+                                        </select><!-- region -->
+                                    </div>
+                                </li><!-- f_form_region -->
+                            </ul><!-- f_form_left -->
+                        
+                            <ul class="f_form_cont f_form_right">
+                                <li class="f_form_textarea">
+                                    <label class="input_title text18_b"><span>&nbsp;&nbsp;&nbsp;</span>문의내용</label>
+                                    <textarea id="textarea" class="textarea" name="textarea"></textarea>
+                                </li><!-- f_form_textarea -->
+                            </ul><!-- f_form_right -->
+                        </div>
+
+                        <div class="f_form_bottom">
+                            <input type="checkbox" name="checkbox">
+                            <span>개인정보 수집 활용을 동의합니다.</span>
+                        </div><!-- f_form_bottom -->
+
+                        <div class="f_form_button">
+                                <button type="button" name="button">상담신청</button>
+                        </div><!-- f_form_button -->
+                    </form><!-- f_form -->
                 </div><!-- franchise_cont -->
 
 

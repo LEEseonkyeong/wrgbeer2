@@ -11,39 +11,20 @@
 /* 리셋 css */
 /* 리셋 css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul,
-ol,
-li {
-    list-style: none;
-}
-
-img {
-    vertical-align: bottom;
-}
-
-input {
-    border: none;
-    margin-left: 30px;
-}
-
+* {margin: 0; padding: 0; box-sizing: border-box;}
+a {text-decoration: none; color: inherit;}
+ul,ol,li{list-style: none;}
+img {vertical-align: bottom;}
+input {border: none;}
 input::-webkit-input-placeholder {
-    color: #8E8479;
+    color: #8e8479;
     font-family: "Noto Sans KR";
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
-
+select {border: none;}
+textarea {border: none; resize: none;}
+button {border: none;}
 body {
     color: #282522;
     font-family: "Noto Sans KR", system-ui;
@@ -53,8 +34,6 @@ body {
     font-size: 18px;
     overflow-x: hidden;
 }
-
-
 
 .blind {
     display: block;
@@ -72,11 +51,16 @@ body {
     white-space: nowrap;
 }
 
-.sb_p110{
+.sb_p110 {
     padding: 110px 302px;
     text-align: center;
 }
 
-.p_title_mg{
+.p_title_mg {
     margin: 38px 0 65px;
+}
+
+.star {
+    color: #e28100;
+    font-weight: 700;
 }

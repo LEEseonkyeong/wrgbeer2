@@ -44,5 +44,19 @@ $(function () {
     $(".bx-wrapper .bx-pager.bx-default-pager .bx-pager-item").eq(1).find("a").text("안주류");
     $(".bx-wrapper .bx-pager.bx-default-pager .bx-pager-item").eq(2).find("a").text("주류");
 
+    function onlyNumber() {
+        if ((event.keyCode > 48 && event.keyCode < 57) ||
+            event.keyCode == 8 //backspace
+            ||
+            event.keyCode == 37 || event.keyCode == 39 //방향키 →, ←
+            ||
+            event.keyCode == 46 // delete키
+            ||
+            event.keyCode == 39) {} else {
+            event.returnValue = false;
+        };
+    }; // onlyNumber
+
+
 
 }); // jQuery
